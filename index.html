@@ -5,64 +5,81 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Eya Dridi - Portfolio</title>
 <style>
-body{font-family:Arial;margin:0;background:#fff;color:#333}
-header{display:flex;justify-content:space-between;padding:15px 30px;background:#111;color:#fff;position:sticky;top:0}
-.logo{font-weight:bold;font-size:22px} .logo span{color:#e91e63}
-nav a{color:#fff;margin-left:15px;text-decoration:none}
-.hero{text-align:center;padding:80px 20px;background:linear-gradient(135deg,#fce4ec,#f8bbd0)}
-.hero h1{font-size:45px;margin:10px 0} .hero h2{color:#555}
-.btn{display:inline-block;padding:12px 25px;background:#e91e63;color:#fff;border-radius:25px;text-decoration:none;margin:10px;font-weight:bold}
-.btn2{background:#111}
-.titre{text-align:center;font-size:30px;margin:40px 0 20px}
-.apropos{text-align:center;padding:40px 20px;background:#f9f9f9}
-.competences{text-align:center;padding:40px 20px}
-.skills span{display:inline-block;background:#fce4ec;padding:10px 20px;margin:5px;border-radius:20px;font-weight:bold}
-.projets{padding:40px 20px;background:#f9f9f9}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;max-width:1000px;margin:0 auto}
-.card{background:#fff;padding:20px;border-radius:15px;box-shadow:0 4px 10px rgba(0,0,0,0.1)}
-.contact{text-align:center;padding:60px 20px;background:#111;color:#fff}
-footer{text-align:center;padding:15px;background:#000;color:#aaa}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',sans-serif;background:#0f172a;color:#e2e8f0;min-height:100vh}
+.container{max-width:900px;margin:0 auto;padding:40px 20px}
+.header{text-align:center;padding:60px 0 40px}
+.header img{width:140px;height:140px;border-radius:50%;border:4px solid #3b82f6;object-fit:cover;margin-bottom:20px}
+.header h1{font-size:42px;margin-bottom:10px;background:linear-gradient(90deg,#60a5fa,#a78bfa);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.header p{color:#94a3b8;font-size:18px;margin-bottom:30px}
+.links{display:flex;gap:15px;justify-content:center;flex-wrap:wrap;margin-bottom:50px}
+.btn{padding:12px 28px;border-radius:30px;text-decoration:none;font-weight:600;transition:0.3s;display:inline-flex;align-items:center;gap:8px}
+.btn-primary{background:#3b82f6;color:white}
+.btn-primary:hover{background:#2563eb;transform:translateY(-2px)}
+.btn-dark{background:#1e293b;color:white;border:1px solid #334155}
+.btn-dark:hover{background:#334155;transform:translateY(-2px)}
+.section{background:#1e293b;border-radius:20px;padding:30px;margin-bottom:20px;border:1px solid #334155}
+.section h2{margin-bottom:20px;color:#f8fafc;font-size:22px}
+.skills{display:flex;flex-wrap:wrap;gap:10px}
+.skill{background:#0f172a;border:1px solid #3b82f6;color:#60a5fa;padding:8px 16px;border-radius:20px;font-size:14px}
+.projects{display:grid;gap:15px}
+.project{background:#0f172a;padding:20px;border-radius:12px;border:1px solid #334155}
+.footer{text-align:center;padding:40px;color:#64748b;font-size:14px}
 </style>
 </head>
 <body>
-<header><div class="logo">Eya<span>.</span></div><nav><a href="#accueil">Accueil</a><a href="#projets">Projets</a><a href="#contact">Contact</a></nav></header>
-<section id="accueil" class="hero">
-<h3>Bonjour, je suis</h3><h1>Eya Dridi</h1>
-<h2>Étudiante en Développement Web - PFE 2026-2027</h2>
-<p>Étudiante en 3ème année à l'ISET Sidi Bouzid, je prépare mon Projet de Fin d'Études en développement web.</p>
-<a href="#projets" class="btn">Voir mes projets</a>
-<a href="#contact" class="btn btn2">Me contacter</a><a href="./CV%20Eya%20Dridi.pdf" class="btn" target="_blank">📄 Mon CV</a>
-<a href="./CV Eya Dridi.pdf" target="_blank" class="btn">📄 Mon CV</a>
-</section>
-<section class="apropos"><h2 class="titre">À propos de moi</h2>
-<p>Je m'appelle <b>Eya Dridi</b>, étudiante en Développement Web à l'ISET Sidi Bouzid.</p>
-<p><b>Ville:</b> Sidi Bouzid - Tunisie<br><b>Email:</b> driditoutaeya07@gmail.com</p></section>
-<section id="education" class="apropos"><h2 class="titre">Éducation</h2>
-<div style="text-align:left;max-width:600px;margin:0 auto">
-<p><b>2026-2027:</b> 3ème Année - ISET Sidi Bouzid (PFE)</p>
-<p><b>2025-2026:</b> 2ème Année - Développement Web</p>
-<p><b>2024-2025:</b> 1ère Année - Développement Web</p>
-<p><b>Modules:</b> HTML, CSS, JS, PHP, MySQL</p></div></section>
-<section class="competences"><h2 class="titre">Mes Compétences</h2>
-<div class="skills"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>PHP</span><span>MySQL</span><span>Canva</span><span>GitHub</span></div></section>
-<section id="projets" class="projets"><h2 class="titre">Mes Projets</h2>
-<div class="cards">
-<div class="card"><h3>🌸 Portfolio Personnel</h3><p>Site moderne et responsive pour présenter mon profil.</p><p><b>HTML-CSS-JS</b></p></div>
-<div class="card"><h3>✅ To-Do List</h3><p>Application gestion des tâches avec sauvegarde.</p><p><b>HTML-CSS-JS</b></p></div>
-<div class="card"><h3>🛒 Gestion Boutique</h3><p>Gestion produits avec base de données.</p><p><b>PHP-MySQL</b></p></div>
-<div class="card"><h3>🏫 Site ISET</h3><p>Site vitrine ISET Sidi Bouzid.</p><p><b>HTML-CSS-JS</b></p></div>
-<div class="card"><h3>🎓 PFE 2026-2027</h3><p>Application web complète en cours.</p><p><b>HTML-CSS-PHP-MySQL</b></p></div>
-</div></section>
-<section id="experience" class="apropos"><h2 class="titre">Expérience & Stages</h2>
-<div style="text-align:left;max-width:650px;margin:0 auto">
-<p><b>2026-2027: Stage PFE</b><br>Application web complète Front+Back</p><br>
-<p><b>2025-2026: Stage Perfectionnement</b><br>Dev web en entreprise</p><br>
-<p><b>2024-2025: Stage Initiation</b><br>Découverte milieu pro</p>
-</div></section>
-<section id="contact" class="contact"><h2 class="titre">Contactez-moi</h2>
-<a href="https://mail.google.com/mail/?view=cm&fs=1&to=driditoutaeya07@gmail.com" target="_blank" class="btn">📧 driditoutaeya07@gmail.com</a><br><br>
-<a href="https://github.com/dridieya445" target="_blank" class="btn btn2">GitHub - dridieya445</a>
-<p style="margin-top:20px">Sidi Bouzid - Tunisie</p></section>
-<footer><p>© 2026 Eya Dridi - Portfolio avec ❤️</p></footer>
+<div class="container">
+  <div class="header">
+    <h1>Eya Dridi</h1>
+    <p>Data Engineer | BI & Data Enthusiast | Tunis</p>
+    
+    <div class="links">
+      <a href="./CV.pdf" target="_blank" class="btn btn-primary">📄 Mon CV</a>
+      <a href="https://github.com/dridieya445" target="_blank" class="btn btn-dark">💻 GitHub</a>
+      <a href="https://www.linkedin.com/in/eya-dridi" target="_blank" class="btn btn-dark">🔗 LinkedIn</a>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>👋 À propos</h2>
+    <p style="color:#94a3b8;line-height:1.7">
+      Passionnée par la Data et la transformation des données en insights.
+      Je partage mes projets sur GitHub et je recherche une opportunité en Data Engineering / BI.
+      Bienvenue sur mon portfolio !
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>🛠️ Compétences</h2>
+    <div class="skills">
+      <span class="skill">Python</span>
+      <span class="skill">SQL</span>
+      <span class="skill">PySpark</span>
+      <span class="skill">Power BI</span>
+      <span class="skill">Git & GitHub</span>
+      <span class="skill">Docker</span>
+      <span class="skill">ETL</span>
+      <span class="skill">Data Pipeline</span>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>📂 Projets</h2>
+    <div class="projects">
+      <div class="project">
+        <h3 style="margin-bottom:8px">🌐 Portfolio Website</h3>
+        <p style="color:#94a3b8;font-size:14px">Mon portfolio hébergé sur GitHub Pages - dridieya445.github.io</p>
+      </div>
+      <div class="project">
+        <h3 style="margin-bottom:8px">📊 Projets Data à venir</h3>
+        <p style="color:#94a3b8;font-size:14px">Ajoutez vos projets ici avec liens GitHub</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    © 2025 Eya Dridi - dridieya445.github.io
+  </div>
+</div>
 </body>
 </html>
